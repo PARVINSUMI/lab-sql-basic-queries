@@ -38,7 +38,14 @@ SELECT COUNT(DISTINCT film_id) AS films_available FROM inventory;
 
 SELECT COUNT(DISTINCT inventory_id) AS films_rented FROM rental;
 
+
+
 SELECT COUNT(DISTINCT last_name) AS unique_actor_last_names FROM actor;
+
+SELECT title, length FROM film
+ORDER BY length DESC
+LIMIT 10;
+
 
 SELECT * FROM actor
 WHERE first_name = 'SCARLETT';
